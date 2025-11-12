@@ -1,0 +1,6 @@
+flask
+sounddevice
+simpleaudio
+scipy
+TTS
+openai-whisper

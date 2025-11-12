@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Interface</title>
+
+  <!-- 🎨 Add this line for the Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- 🧩 Link your CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🎙 Voice-to-Text / Text-to-Speech</h1>
+
+  <!-- 🎛 Main control panel -->
+  <div id="controls">
+    <button id="recordBtn">🎙 Record</button>
+    <textarea id="textInput" placeholder="Type or edit text here..."></textarea>
+    <button id="speakBtn">🔊 Speak</button>
+  </div>
+
+  <!-- 📝 Step 3 — Move this here -->
+  <h2>Live Transcription</h2>
+  <p id="transcription"></p>
+
+  <!-- 🔗 Your JS file -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
